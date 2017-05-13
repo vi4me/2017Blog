@@ -111,8 +111,6 @@ ActiveRecord::Schema.define(version: 20170509032311) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
-    t.string   "role"
-    t.string   "references"
     t.integer  "role_id"
     t.string   "provider"
     t.string   "uuid"

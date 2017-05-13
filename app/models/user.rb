@@ -12,9 +12,7 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :commented_articles, through: :comments,
            source: :articles
-  has_many :likes, dependent: :destroy
   has_many :auth_providers, dependent: :destroy
-  has_and_belongs_to_many :liked_articles, class_name: 'Article'
 
   before_validation do
     if self.password.blank?
