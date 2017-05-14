@@ -4,9 +4,9 @@
 
   <div class="nav navbar-nav navbar-right">
     <% if user_signed_in? %>
-      
+       
         <%= link_to me_users_path do %>
-          <%= image_tag current_user.avatar.url(:thumb) %>
+         <%= image_tag current_user.avatar.url(:thumb) %>
         <% end %>
       
       
